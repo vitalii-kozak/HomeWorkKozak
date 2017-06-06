@@ -1,3 +1,5 @@
+package LinesPoints;
+
 /**
  * Created by Tigra on 26.05.2017.
  */
@@ -18,6 +20,6 @@ public class Line {
 
     @Override
     public String toString() {
-        return "Line (" + start + " " + end + " " + ", length=" + length +")";
+        return "LinesPoints.Line (" + start + " " + end + " " + ", length=" + length +")";
     }
 }

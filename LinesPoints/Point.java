@@ -1,3 +1,5 @@
+package LinesPoints;
+
 /**
  * Created by Tigra on 26.05.2017.
  */
@@ -19,6 +21,6 @@ public class Point {
     }
     @Override
     public String toString() {
-        return "Point (X=" + x + ", Y=" + y +")";
+        return "LinesPoints.Point (X=" + x + ", Y=" + y +")";
     }
 }

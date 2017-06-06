@@ -1,3 +1,5 @@
+package Rectangle;
+
 import java.util.ArrayList;
 import java.util.StringJoiner;
 
@@ -26,6 +28,6 @@ public class Rectangles {
         for (Rectangle rectangle : rectangles) {
             joiner.add(rectangle.toString());
         }
-        return "Rectangles:\n" + joiner.toString();
+        return "Rectangle.Rectangles:\n" + joiner.toString();
     }
 }

@@ -1,3 +1,5 @@
+package Rectangle;
+
 public class Rectangle {
 
     private final double heght;
@@ -30,7 +32,7 @@ public class Rectangle {
 
     @Override
     public String toString() {
-        return "Rectangle{" +
+        return "Rectangle.Rectangle{" +
                 "perimeter='" + perimeter + '\'' +
                 ", area=" + area +
                 '}';

@@ -1,3 +1,5 @@
+package Books;
+
 import java.util.Objects;
 
 /**
@@ -115,7 +117,7 @@ public class Book {
     }
      @Override
      public String toString() {
-         return "Book {" + "id=" + id +
+         return "Books.Book {" + "id=" + id +
                  ", name='" + name + '\'' +
                  ", author='" + author + '\'' +
                  ", publishing='" + publishing + '\'' +

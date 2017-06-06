@@ -1,3 +1,5 @@
+package Books;
+
 /**
  * Created by Tigra on 26.05.2017.
  */
@@ -13,7 +15,7 @@ public class BooksRunner {
         books.add(new Book("Tantra", "Volkov","Mahaon", 1966,255, 228.00, 1));
         books.add(new Book("Warlock", "Tolstoi","Kiev", 1975,198, 175.00, 1));
 
-        System.out.println("All Books ***************************************************");
+        System.out.println("All Books.Books ***************************************************");
         System.out.println(books);
         System.out.println("By Author ****************************************************");
         System.out.println(books.findByAuthor("Frank Baum"));

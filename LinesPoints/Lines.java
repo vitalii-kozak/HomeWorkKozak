@@ -1,3 +1,5 @@
+package LinesPoints;
+
 import java.util.ArrayList;
 import java.util.StringJoiner;
 
@@ -37,6 +39,6 @@ public class Lines {
         for (Line line : lines) {
             joiner.add(line.toString());
         }
-        return "Lines:\n" + joiner.toString();
+        return "LinesPoints.Lines:\n" + joiner.toString();
     }
 }
