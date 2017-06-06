@@ -1,3 +1,5 @@
+package Taxi;
+
 public class TaxiRidesRunner {
     public static void main(String[] args) {
         TaxiTariff tariff1 = new StandardTariff();

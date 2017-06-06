@@ -1,3 +1,5 @@
+package Taxi;
+
 import java.util.ArrayList;
 import java.util.StringJoiner;
 
@@ -23,6 +25,6 @@ public class TaxiRides   {
         for (TaxiRide ride : rides) {
             joiner.add(ride.toString());
         }
-        return "TaxiRides:\n" + joiner.toString();
+        return "Taxi.TaxiRides:\n" + joiner.toString();
     }
 }

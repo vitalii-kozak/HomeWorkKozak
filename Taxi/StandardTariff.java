@@ -1,3 +1,5 @@
+package Taxi;
+
 public class StandardTariff implements TaxiTariff {
 
     @Override

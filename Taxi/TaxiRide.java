@@ -1,3 +1,5 @@
+package Taxi;
+
 public class TaxiRide  {
     private int passengers;
     private int distance;
@@ -48,7 +50,7 @@ public class TaxiRide  {
 
     @Override
     public String toString() {
-        return "TaxiRide{" +
+        return "Taxi.TaxiRide{" +
                 "passengers=" + passengers +
                 ", distance=" + distance +
                 ", duration=" + duration +
