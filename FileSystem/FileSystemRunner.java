@@ -1,8 +1,5 @@
 package FileSystem;
 
-/**
- * Created by Tigra on 13.06.2017.
- */
 public class FileSystemRunner {
     public static void main(String[] args) {
 
