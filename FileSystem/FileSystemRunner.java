@@ -21,6 +21,5 @@ public class FileSystemRunner {
         root.add(dir2);
 
         System.out.println(root);
-
     }
 }
