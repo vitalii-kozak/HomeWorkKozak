@@ -26,11 +26,6 @@ public class Book {
         this.typeOfBookCover = typeOfBookCover;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, author, publishing, year, numberOfPages, price, typeOfBookCover);
-    }
-
     public static int getId() {
         return id;
     }
@@ -102,19 +97,6 @@ public class Book {
         return this;
     }
 
-    @Override
-     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Book)) return false;
-        Book book = (Book) o;
-        return year == book.year &&
-               numberOfPages == book.numberOfPages &&
-               price == book.price &&
-               typeOfBookCover == book.typeOfBookCover &&
-               Objects.equals(name, book.name) &&
-               Objects.equals(author, book.author) &&
-               Objects.equals(publishing, book.publishing);
-    }
      @Override
      public String toString() {
          return "Books.Book {" + "id=" + id +
@@ -128,4 +110,34 @@ public class Book {
                  '}';
      }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Book book = (Book) o;
+
+        if (year != book.year) return false;
+        if (numberOfPages != book.numberOfPages) return false;
+        if (Double.compare(book.price, price) != 0) return false;
+        if (typeOfBookCover != book.typeOfBookCover) return false;
+        if (name != null ? !name.equals(book.name) : book.name != null) return false;
+        if (author != null ? !author.equals(book.author) : book.author != null) return false;
+        return publishing != null ? publishing.equals(book.publishing) : book.publishing == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (author != null ? author.hashCode() : 0);
+        result = 31 * result + (publishing != null ? publishing.hashCode() : 0);
+        result = 31 * result + year;
+        result = 31 * result + numberOfPages;
+        temp = Double.doubleToLongBits(price);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + typeOfBookCover;
+        return result;
+    }
 }
